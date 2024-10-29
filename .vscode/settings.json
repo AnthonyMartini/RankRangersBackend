@@ -1,4 +1,4 @@
 {
     "appService.defaultWebAppToDeploy": "/subscriptions/ea13891e-3936-4877-a4c8-4e75b58fddf7/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/rankrangersrequests",
-    "appService.deploySubpath": "myExpressApp"
+    "appService.deploySubpath": "server"
 }
