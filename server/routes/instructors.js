@@ -1,12 +1,15 @@
-const express = require('express');
-const router = express.Router();
+const express = require("express");
+
+const app = express();
+
+
 const sql = require('mssql');
 require('dotenv').config();
 // SQL Server configuration
 
 
 /* GET instructor data by name */
-router.get('/', async function(req, res, next) {
+app.get("/", (req, res) => {
     const config = {
         user: process.env.NEXT_PUBLIC_DB_USER,
         password: process.env.NEXT_PUBLIC_DB_PASSWORD,
@@ -49,4 +52,4 @@ GROUP BY instructor`;
     }
 });
 
-module.exports = router;
+module.exports = app;
