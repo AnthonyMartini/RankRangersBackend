@@ -9,7 +9,7 @@ require('dotenv').config();
 
 
 /* GET instructor data by name */
-app.get("/", (req, res) => {
+app.get('/', async function(req, res) {
     const config = {
         user: process.env.NEXT_PUBLIC_DB_USER,
         password: process.env.NEXT_PUBLIC_DB_PASSWORD,
