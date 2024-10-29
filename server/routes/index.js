@@ -1,5 +1,8 @@
-var express = require('express');
-var router = express.Router();
+
+
+const express = require("express");
+
+const app = express();
 
 const config = {
   user: process.env.DB_USER,
@@ -14,11 +17,13 @@ const config = {
       encrypt: true
   }
 };
-console.log("Database configuration:", config);
+console.log(config);
+console.log(process.env.DB_NAME);
 
 app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
 
 
-module.exports = router;
+// Export the Express API
+module.exports = app;
