@@ -16,6 +16,7 @@ app.use(cors(corsOptions));
 app.listen(5050, () => {
     console.log(`Server Started at ${5050}`)
 })
+export default app;
 
 //const routes = require('./routes/routes');
 //app.use('/api', routes)
