@@ -55,9 +55,9 @@ app.use(function(err, req, res, next) {
     }
   });
 });
-
-app.listen(5000, () => {
-  console.log("Running on port 5000.");
+const port = process.env.PORT;
+app.listen(port, () => {
+  console.log(`Running on port ${port}.`);
 });
 
 module.exports = app;
