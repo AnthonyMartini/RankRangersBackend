@@ -36,7 +36,7 @@ router.get("/", async function (req, res, next) {
     SELECT * FROM [dbo].[classdistributions]
     WHERE Department = @department 
     AND Code = @courseCode
-    ORDER BY Year DESC, Semester DESC`;
+    ORDER BY Year DESC, Semester DESC, A DESC`;
     const result = await pool
       .request()
       .input("department", sql.NVarChar, department)
