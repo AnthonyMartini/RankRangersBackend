@@ -13,7 +13,7 @@ var app = express();
 // List of allowed origins (local and production domains)
 const allowedOrigins = [
   "http://localhost:3000", // Local development
-  "https://anthonymartini.github.io", // QA domain
+  "https://profspective.info/", // PROD domain
 ];
 app.use(
   cors({
